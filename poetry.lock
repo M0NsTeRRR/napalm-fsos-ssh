@@ -15,16 +15,16 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.extras]
-dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
-docs = ["furo", "sphinx", "zope.interface", "sphinx-notfound-page"]
-tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope-interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
+docs = ["furo", "sphinx", "zope-interface", "sphinx-notfound-page"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope-interface", "cloudpickle"]
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
 
 [[package]]
 name = "bcrypt"
 version = "3.2.2"
 description = "Modern password hashing for your software and your servers"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -39,7 +39,7 @@ typecheck = ["mypy"]
 name = "certifi"
 version = "2022.5.18.1"
 description = "Python package for providing Mozilla's CA Bundle."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -47,7 +47,7 @@ python-versions = ">=3.6"
 name = "cffi"
 version = "1.15.0"
 description = "Foreign Function Interface for Python calling C code."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -66,7 +66,7 @@ python-versions = ">=3.6.1"
 name = "charset-normalizer"
 version = "2.0.12"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5.0"
 
@@ -77,7 +77,7 @@ unicode_backport = ["unicodedata2"]
 name = "ciscoconfparse"
 version = "1.6.40"
 description = "Parse, Audit, Query, Build, and Modify Cisco IOS-style and JunOS-style configurations"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -91,7 +91,7 @@ toml = "0.10.2"
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -99,7 +99,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "cryptography"
 version = "37.0.2"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -126,7 +126,7 @@ python-versions = "*"
 name = "dnspython"
 version = "2.2.1"
 description = "DNS toolkit"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6,<4.0"
 
@@ -154,7 +154,7 @@ testing = ["covdefaults (>=1.2.0)", "coverage (>=4)", "pytest (>=4)", "pytest-co
 name = "future"
 version = "0.18.2"
 description = "Clean single-source support for Python 3 and 2"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -173,7 +173,7 @@ license = ["ukkonen"]
 name = "idna"
 version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -189,7 +189,7 @@ python-versions = "*"
 name = "jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -203,7 +203,7 @@ i18n = ["Babel (>=2.7)"]
 name = "junos-eznc"
 version = "2.6.3"
 description = "Junos 'EZ' automation for non-programmers"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -225,7 +225,7 @@ yamlordereddictloader = "*"
 name = "loguru"
 version = "0.6.0"
 description = "Python logging made (stupidly) simple"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -240,7 +240,7 @@ dev = ["colorama (>=0.3.4)", "docutils (==0.16)", "flake8 (>=3.7.7)", "tox (>=3.
 name = "lxml"
 version = "4.8.0"
 description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, != 3.4.*"
 
@@ -254,7 +254,7 @@ source = ["Cython (>=0.29.7)"]
 name = "markupsafe"
 version = "2.1.1"
 description = "Safely add untrusted strings to HTML/XML markup."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -262,7 +262,7 @@ python-versions = ">=3.7"
 name = "napalm"
 version = "3.4.1"
 description = "Network Automation and Programmability Abstraction Layer with Multivendor support"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -281,26 +281,28 @@ pyeapi = ">=0.8.2"
 pyYAML = "*"
 requests = ">=2.7.0"
 scp = "*"
+setuptools = ">=38.4.0"
 textfsm = "*"
 
 [[package]]
 name = "ncclient"
 version = "0.6.9"
 description = "Python library for NETCONF clients"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.dependencies]
 lxml = ">=3.3.0"
 paramiko = ">=1.15.0"
+setuptools = ">0.6"
 six = "*"
 
 [[package]]
 name = "netaddr"
 version = "0.8.0"
 description = "A network address manipulation library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -308,7 +310,7 @@ python-versions = "*"
 name = "netmiko"
 version = "3.4.0"
 description = "Multi-vendor library to simplify Paramiko SSH connections to network devices"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -317,6 +319,7 @@ ntc-templates = "*"
 paramiko = ">=2.6.0"
 pyserial = "*"
 scp = ">=0.13.2"
+setuptools = ">=38.4.0"
 tenacity = "*"
 
 [package.extras]
@@ -334,7 +337,7 @@ python-versions = "*"
 name = "ntc-templates"
 version = "3.0.0"
 description = "TextFSM Templates for Network Devices, and Python wrapper for TextFSM's CliTable."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6,<4.0"
 
@@ -356,7 +359,7 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 name = "paramiko"
 version = "2.11.0"
 description = "SSH2 protocol library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -376,7 +379,7 @@ invoke = ["invoke (>=1.3)"]
 name = "passlib"
 version = "1.7.4"
 description = "comprehensive password hashing framework supporting over 30 schemes"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -438,7 +441,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "pycparser"
 version = "2.21"
 description = "C parser in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -446,7 +449,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "pyeapi"
 version = "0.8.4"
 description = "Python Client for eAPI"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -461,7 +464,7 @@ test = ["coverage", "mock"]
 name = "pynacl"
 version = "1.5.0"
 description = "Python binding to the Networking and Cryptography (NaCl) library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -476,7 +479,7 @@ tests = ["pytest (>=3.2.1,!=3.3.0)", "hypothesis (>=3.27.0)"]
 name = "pyparsing"
 version = "3.0.9"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.8"
 
@@ -487,7 +490,7 @@ diagrams = ["railroad-diagrams", "jinja2"]
 name = "pyserial"
 version = "3.5"
 description = "Python Serial Port Extension"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -519,7 +522,7 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -527,7 +530,7 @@ python-versions = ">=3.6"
 name = "requests"
 version = "2.27.1"
 description = "Python HTTP for Humans."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
@@ -545,7 +548,7 @@ use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 name = "scp"
 version = "0.14.4"
 description = "scp module for paramiko"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -553,10 +556,23 @@ python-versions = "*"
 paramiko = "*"
 
 [[package]]
+name = "setuptools"
+version = "62.3.2"
+description = "Easily download, build, install, upgrade, and uninstall Python packages"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-reredirects", "sphinxcontrib-towncrier", "furo"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-enabler (>=1.0.1)", "pytest-perf", "mock", "flake8-2020", "virtualenv (>=13.0.0)", "wheel", "pip (>=19.1)", "jaraco.envs (>=2.2)", "pytest-xdist", "jaraco.path (>=3.2.0)", "build", "filelock (>=3.4.0)", "pip-run (>=8.8)", "ini2toml[lite] (>=0.9)", "tomli-w (>=1.0.0)", "pytest-black (>=0.3.7)", "pytest-cov", "pytest-mypy (>=0.9.1)"]
+testing-integration = ["pytest", "pytest-xdist", "pytest-enabler", "virtualenv (>=13.0.0)", "tomli", "wheel", "jaraco.path (>=3.2.0)", "jaraco.envs (>=2.2)", "build", "filelock (>=3.4.0)"]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -564,7 +580,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 name = "tenacity"
 version = "8.0.1"
 description = "Retry code until it succeeds"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -575,7 +591,7 @@ doc = ["reno", "sphinx", "tornado (>=4.5)"]
 name = "textfsm"
 version = "1.1.2"
 description = "Python module for parsing semi-structured text into python tables."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -587,7 +603,7 @@ six = "*"
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -603,7 +619,7 @@ python-versions = ">=3.7"
 name = "transitions"
 version = "0.8.11"
 description = "A lightweight, object-oriented Python state machine implementation with many extensions."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -618,7 +634,7 @@ test = ["pytest"]
 name = "urllib3"
 version = "1.26.9"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 
@@ -649,7 +665,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 name = "win32-setctime"
 version = "1.1.0"
 description = "A small Python utility to set file creation time on Windows"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -660,7 +676,7 @@ dev = ["pytest (>=4.6.2)", "black (>=19.3b0)"]
 name = "yamlordereddictloader"
 version = "0.4.0"
 description = "YAML loader and dump for PyYAML allowing to keep keys order."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -669,8 +685,8 @@ pyyaml = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.10"
-content-hash = "b6c70d77b18aeed92f1a44ff3965e95c64d2cf51fa7b1a245443dd38ef2269d1"
+python-versions = "^3.8"
+content-hash = "aca817be1399df89b4c719397341e68e9a7941efc8ded7e0720572c810a8dff0"
 
 [metadata.files]
 atomicwrites = [
@@ -1058,6 +1074,10 @@ requests = [
 scp = [
     {file = "scp-0.14.4-py2.py3-none-any.whl", hash = "sha256:29ddaafbfba60793a8a779694c97d8c150d365668a4ef67616c515b80a69ef2f"},
     {file = "scp-0.14.4.tar.gz", hash = "sha256:54699b92cb68ae34b5928c48a888eab9722a212502cba89aa795bd56597505bd"},
+]
+setuptools = [
+    {file = "setuptools-62.3.2-py3-none-any.whl", hash = "sha256:68e45d17c9281ba25dc0104eadd2647172b3472d9e01f911efa57965e8d51a36"},
+    {file = "setuptools-62.3.2.tar.gz", hash = "sha256:a43bdedf853c670e5fed28e5623403bad2f73cf02f9a2774e91def6bda8265a7"},
 ]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
