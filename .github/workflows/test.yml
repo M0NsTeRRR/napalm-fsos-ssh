@@ -23,8 +23,11 @@ jobs:
         export PATH="$PATH:$HOME/.poetry/bin/" 
         source $HOME/.poetry/env
         poetry install
-        source `poetry env info --path`/bin/activate
     - name: Run pre-commit
-      run: pre-commit run --all-files
+      run: |
+        source `poetry env info --path`/bin/activate
+        pre-commit run --all-files
     - name: Run test
-      run: pytest
+      run: |
+        source `poetry env info --path`/bin/activate
+        pytest
