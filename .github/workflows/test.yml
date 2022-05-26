@@ -3,7 +3,7 @@ on:
   - push
   - pull_request
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -12,26 +12,27 @@ jobs:
           - "3.9"
           - "3.10"
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install poetry & dependencies
-      run: |
-        curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-        export PATH="$PATH:$HOME/.poetry/bin/"
-        source $HOME/.poetry/env
-        poetry install
-    - name: Run pre-commit
-      run: |
-        export PATH="$PATH:$HOME/.poetry/bin/"
-        source $HOME/.poetry/env
-        source `poetry env info --path`/bin/activate
-        pre-commit run --all-files
-    - name: Run test
-      run: |
-        export PATH="$PATH:$HOME/.poetry/bin/"
-        source $HOME/.poetry/env
-        source `poetry env info --path`/bin/activate
-        pytest
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install poetry & dependencies
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          export PATH="$PATH:$HOME/.poetry/bin/"
+          source $HOME/.poetry/env
+          poetry self update --preview
+          poetry install
+      - name: Run pre-commit
+        run: |
+          export PATH="$PATH:$HOME/.poetry/bin/"
+          source $HOME/.poetry/env
+          source `poetry env info --path`/bin/activate
+          pre-commit run --all-files
+      - name: Run test
+        run: |
+          export PATH="$PATH:$HOME/.poetry/bin/"
+          source $HOME/.poetry/env
+          source `poetry env info --path`/bin/activate
+          pytest
