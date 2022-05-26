@@ -5,11 +5,12 @@ description = "Napalm driver for FSOS through SSH"
 authors = ["Ludovic Ortega <ludovic.ortega@adminafk.fr>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 napalm = "^3.4.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
+pre-commit = "^2.19.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
