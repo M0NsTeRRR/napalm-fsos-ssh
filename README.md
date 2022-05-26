@@ -2,7 +2,7 @@ Napalm driver for FSOS using SSH
 
 [![PyPI](https://img.shields.io/pypi/v/napalm-fsos-ssh.svg)](https://pypi.python.org/pypi/napalm-fsos-ssh)
 [![PyPI versions](https://img.shields.io/pypi/pyversions/napalm-fsos-ssh.svg)](https://pypi.python.org/pypi/napalm-fsos-ssh)
-[![Actions Build](https://github.com/M0NsTeRRR/napalm-fsos/workflows/Python%20test/badge.svg)](https://github.com/M0NsTeRRR/napalm-fsos-ssh/blob/main/.github/workflows/test.yml)
+[![Python test](https://github.com/M0NsTeRRR/napalm-fsos-ssh/actions/workflows/test.yml/badge.svg)](https://github.com/M0NsTeRRR/napalm-fsos-ssh/actions/workflows/test.yml)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 # Warning
