@@ -18,9 +18,9 @@ jobs:
           export PATH="$PATH:$HOME/.local/bin"
           poetry self update --preview
           poetry install
-          poetry plugin add poetry-version-plugin
       - name: Publish package
         run: |
           export PATH="$PATH:$HOME/.local/bin"
           source `poetry env info --path`/bin/activate
+          poetry plugin add poetry-version-plugin
           poetry publish -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
