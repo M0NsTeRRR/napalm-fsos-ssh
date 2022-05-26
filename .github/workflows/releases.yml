@@ -23,4 +23,4 @@ jobs:
           export PATH="$PATH:$HOME/.local/bin"
           source `poetry env info --path`/bin/activate
           poetry plugin add poetry-version-plugin
-          poetry publish -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
+          poetry publish --build -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
