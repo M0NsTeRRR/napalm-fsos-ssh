@@ -91,7 +91,7 @@ class FsosDriver(NetworkDriver):
 
     @staticmethod
     def _format_uptime(uptime):
-        uptime_sec = 0.0
+        uptime_sec = 0
 
         uptime_info = uptime.replace("and", "").replace(" ", "").split(",")
 
@@ -107,7 +107,7 @@ class FsosDriver(NetworkDriver):
             elif unit == "seconds":
                 uptime_sec += time_value
 
-        return uptime_sec
+        return float(uptime_sec)
 
     @staticmethod
     def _format_speed(speed):
@@ -116,7 +116,7 @@ class FsosDriver(NetworkDriver):
             v = f"{speed_match}000"
         else:
             v = re.match(r"\d+", speed).group(0)
-        return int(v)
+        return float(v)
 
     @staticmethod
     def _get_protocol(protocol):
