@@ -1,3 +1,5 @@
+## Moved to https://github.com/napalm-automation-community/napalm-fsos-ssh
+
 Napalm driver for FSOS using SSH
 
 [![PyPI](https://img.shields.io/pypi/v/napalm-fsos-ssh.svg)](https://pypi.python.org/pypi/napalm-fsos-ssh)
